@@ -17,12 +17,11 @@ var Handler = function () {
                     if (($(document).height() - $(this).height()) == $(this).scrollTop()) {
                             if (($(window).scrollTop() + $(window).height()) >= ($(document).height() - $("#footer").height())) {
                                 //console.log( ($(document).height() - $('#footer').height() ));
-                                var urlData = "YOUR URL WITH PARAM";
+                                var urlData = "data.txt";
                                 if (_loadMore) {
                                     app.do_ajax(urlData, 'loader');
                                 }
                             }
-
                     }
                 });
             }, 1000);
